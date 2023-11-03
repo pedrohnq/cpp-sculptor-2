@@ -1,0 +1,4 @@
+<map id="CutSphere" name="CutSphere">
+<area shape="rect" id="node1" title="A classe CutSphere representa uma operação de corte em forma de esfera tridimensional." alt="" coords="30,80,119,107"/>
+<area shape="rect" id="node2" href="$classFiguraGeometrica.html" title="A classe FiguraGeometrica é uma classe base abstrata para representar figuras geométricas." alt="" coords="5,5,144,32"/>
+</map>

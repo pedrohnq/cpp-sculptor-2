@@ -1,0 +1,169 @@
+\hypertarget{classCutBox}{}\doxysection{Cut\+Box Class Reference}
+\label{classCutBox}\index{CutBox@{CutBox}}
+
+
+A classe \mbox{\hyperlink{classCutBox}{Cut\+Box}} representa uma operação de corte em forma de caixa tridimensional.  
+
+
+
+
+{\ttfamily \#include $<$cutbox.\+h$>$}
+
+
+
+Inheritance diagram for Cut\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classCutBox__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cut\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classCutBox__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCutBox_abe794bb81da9f1529743f94bda97f428}{Cut\+Box}} (int \+\_\+x0, int \+\_\+x1, int \+\_\+y0, int \+\_\+y1, int \+\_\+z0, int \+\_\+z1, float \+\_\+r, float \+\_\+g, float \+\_\+b, float \+\_\+a)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classCutBox}{Cut\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCutBox_a66d4f54307d42a20c7ad8aa860ede5bf}\label{classCutBox_a66d4f54307d42a20c7ad8aa860ede5bf}} 
+\mbox{\hyperlink{classCutBox_a66d4f54307d42a20c7ad8aa860ede5bf}{$\sim$\+Cut\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classCutBox}{Cut\+Box}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCutBox_a01216b04bf5a2d01ce1fb89f3fa62a46}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t)
+\begin{DoxyCompactList}\small\item\em Função que realiza a operação de corte em um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCutBox_a9b3c2e2f41f7f73f324c59d11fc73e9b}\label{classCutBox_a9b3c2e2f41f7f73f324c59d11fc73e9b}} 
+int {\bfseries x0}
+\item 
+\mbox{\Hypertarget{classCutBox_ad1f788477c892d4e1362c144be70e547}\label{classCutBox_ad1f788477c892d4e1362c144be70e547}} 
+int {\bfseries x1}
+\item 
+\mbox{\Hypertarget{classCutBox_ab8bd7a8a94c1336daad8d808f5d62f68}\label{classCutBox_ab8bd7a8a94c1336daad8d808f5d62f68}} 
+int {\bfseries y0}
+\item 
+\mbox{\Hypertarget{classCutBox_acefed2c5a0564ea68946266f60018176}\label{classCutBox_acefed2c5a0564ea68946266f60018176}} 
+int {\bfseries y1}
+\item 
+\mbox{\Hypertarget{classCutBox_afb2ac28e61b363d723cc1af03edb37f2}\label{classCutBox_afb2ac28e61b363d723cc1af03edb37f2}} 
+int {\bfseries z0}
+\item 
+\mbox{\Hypertarget{classCutBox_a77a90345c13a7efc02680c15a2e1d7f9}\label{classCutBox_a77a90345c13a7efc02680c15a2e1d7f9}} 
+int \mbox{\hyperlink{classCutBox_a77a90345c13a7efc02680c15a2e1d7f9}{z1}}
+\begin{DoxyCompactList}\small\item\em Coordenadas que definem a caixa de corte. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCutBox_ab80032d945e5e18ce75070339322be14}\label{classCutBox_ab80032d945e5e18ce75070339322be14}} 
+float {\bfseries r}
+\item 
+\mbox{\Hypertarget{classCutBox_ab3224b80036e10d23a7e1de1ad36a761}\label{classCutBox_ab3224b80036e10d23a7e1de1ad36a761}} 
+float {\bfseries g}
+\item 
+\mbox{\Hypertarget{classCutBox_ad8fa3a568cc063ba1362f0565f530753}\label{classCutBox_ad8fa3a568cc063ba1362f0565f530753}} 
+float {\bfseries b}
+\item 
+\mbox{\Hypertarget{classCutBox_ae7f038ae7d05cb9c2f3a57251b5fe20e}\label{classCutBox_ae7f038ae7d05cb9c2f3a57251b5fe20e}} 
+float \mbox{\hyperlink{classCutBox_ae7f038ae7d05cb9c2f3a57251b5fe20e}{a}}
+\begin{DoxyCompactList}\small\item\em Cores da operação de corte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{classCutBox}{Cut\+Box}} representa uma operação de corte em forma de caixa tridimensional. 
+
+A classe \mbox{\hyperlink{classCutBox}{Cut\+Box}} é derivada da classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e é usada para realizar um corte em um espaço tridimensional especificado por suas coordenadas x, y e z.
+
+Exemplo de uso da classe \mbox{\hyperlink{classCutBox}{Cut\+Box}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}sculptor.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main() \{}
+\DoxyCodeLine{    \textcolor{comment}{// Cria um objeto Sculptor com dimensões 10x10x10}}
+\DoxyCodeLine{    \mbox{\hyperlink{classSculptor}{Sculptor}} sculptor(10, 10, 10);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Define a cor vermelha como cor padrão}}
+\DoxyCodeLine{    sculptor.setColor(1.0, 0.0, 0.0, 1.0);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Adiciona uma caixa vermelha com vértices (2, 2, 2) e (7, 7, 7)}}
+\DoxyCodeLine{    \mbox{\hyperlink{classPutBox}{PutBox}} putBox(2, 7, 2, 7, 2, 7, 1.0, 0.0, 0.0, 1.0);}
+\DoxyCodeLine{    putBox.draw(sculptor);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Remove a caixa}}
+\DoxyCodeLine{    \mbox{\hyperlink{classCutBox}{CutBox}} cutBox(2, 7, 2, 7, 2, 7);}
+\DoxyCodeLine{    cutBox.draw(sculptor);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Escreve a escultura em um arquivo no formato OFF}}
+\DoxyCodeLine{    sculptor.writeOFF(\textcolor{stringliteral}{"{}escultura.off"{}});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCutBox_abe794bb81da9f1529743f94bda97f428}\label{classCutBox_abe794bb81da9f1529743f94bda97f428}} 
+\index{CutBox@{CutBox}!CutBox@{CutBox}}
+\index{CutBox@{CutBox}!CutBox@{CutBox}}
+\doxysubsubsection{\texorpdfstring{CutBox()}{CutBox()}}
+{\footnotesize\ttfamily Cut\+Box\+::\+Cut\+Box (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x0,  }\item[{int}]{\+\_\+x1,  }\item[{int}]{\+\_\+y0,  }\item[{int}]{\+\_\+y1,  }\item[{int}]{\+\_\+z0,  }\item[{int}]{\+\_\+z1,  }\item[{float}]{\+\_\+r,  }\item[{float}]{\+\_\+g,  }\item[{float}]{\+\_\+b,  }\item[{float}]{\+\_\+a }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classCutBox}{Cut\+Box}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x0} & Coordenada x do ponto inicial da caixa de corte. \\
+\hline
+{\em \+\_\+x1} & Coordenada x do ponto final da caixa de corte. \\
+\hline
+{\em \+\_\+y0} & Coordenada y do ponto inicial da caixa de corte. \\
+\hline
+{\em \+\_\+y1} & Coordenada y do ponto final da caixa de corte. \\
+\hline
+{\em \+\_\+z0} & Coordenada z do ponto inicial da caixa de corte. \\
+\hline
+{\em \+\_\+z1} & Coordenada z do ponto final da caixa de corte. \\
+\hline
+{\em \+\_\+r} & Componente vermelha da cor da operação de corte. \\
+\hline
+{\em \+\_\+g} & Componente verde da cor da operação de corte. \\
+\hline
+{\em \+\_\+b} & Componente azul da cor da operação de corte. \\
+\hline
+{\em \+\_\+a} & Componente alfa (transparência) da cor da operação de corte. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCutBox_a01216b04bf5a2d01ce1fb89f3fa62a46}\label{classCutBox_a01216b04bf5a2d01ce1fb89f3fa62a46}} 
+\index{CutBox@{CutBox}!draw@{draw}}
+\index{draw@{draw}!CutBox@{CutBox}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Cut\+Box\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Função que realiza a operação de corte em um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a operação de corte será aplicada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a34585fd7c0bd7378fc69c4ee208e676c}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/cutbox.\+h\item 
+src/cutbox.\+cpp\end{DoxyCompactItemize}

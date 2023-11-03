@@ -1,0 +1,167 @@
+\hypertarget{classPutBox}{}\doxysection{Put\+Box Class Reference}
+\label{classPutBox}\index{PutBox@{PutBox}}
+
+
+A classe \mbox{\hyperlink{classPutBox}{Put\+Box}} representa uma operação de colocação de uma caixa tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$putbox.\+h$>$}
+
+
+
+Inheritance diagram for Put\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classPutBox__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Put\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classPutBox__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPutBox_a235e52642dac5ca45d58b18879ddd763}{Put\+Box}} (int \+\_\+x0, int \+\_\+x1, int \+\_\+y0, int \+\_\+y1, int \+\_\+z0, int \+\_\+z1, float \+\_\+r, float \+\_\+g, float \+\_\+b, float \+\_\+a)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classPutBox}{Put\+Box}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPutBox_a030fced5c7acc62c9842e480c5729f2e}\label{classPutBox_a030fced5c7acc62c9842e480c5729f2e}} 
+\mbox{\hyperlink{classPutBox_a030fced5c7acc62c9842e480c5729f2e}{$\sim$\+Put\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classPutBox}{Put\+Box}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPutBox_a3caaf01d035f5a0749fd308e9a86de94}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t)
+\begin{DoxyCompactList}\small\item\em Função que coloca uma caixa tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPutBox_a61d3aac24126b01a16f9748d24642ae2}\label{classPutBox_a61d3aac24126b01a16f9748d24642ae2}} 
+int {\bfseries x0}
+\item 
+\mbox{\Hypertarget{classPutBox_add706addc4c81d0b25219c13fa8fc75d}\label{classPutBox_add706addc4c81d0b25219c13fa8fc75d}} 
+int {\bfseries x1}
+\item 
+\mbox{\Hypertarget{classPutBox_acc1b4deb4f10ebe0417e2da420e0d3d1}\label{classPutBox_acc1b4deb4f10ebe0417e2da420e0d3d1}} 
+int {\bfseries y0}
+\item 
+\mbox{\Hypertarget{classPutBox_a7153a65fd7cc6a387a09dbcaf1b2176c}\label{classPutBox_a7153a65fd7cc6a387a09dbcaf1b2176c}} 
+int {\bfseries y1}
+\item 
+\mbox{\Hypertarget{classPutBox_a2d8e98d861c2bdd96d414d5af225f91e}\label{classPutBox_a2d8e98d861c2bdd96d414d5af225f91e}} 
+int {\bfseries z0}
+\item 
+\mbox{\Hypertarget{classPutBox_a6a32b1e3333da311e22ecb177cb43fb8}\label{classPutBox_a6a32b1e3333da311e22ecb177cb43fb8}} 
+int \mbox{\hyperlink{classPutBox_a6a32b1e3333da311e22ecb177cb43fb8}{z1}}
+\begin{DoxyCompactList}\small\item\em Coordenadas que definem a caixa a ser colocada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPutBox_ade1164ab6c79f663f59eea793e815b7e}\label{classPutBox_ade1164ab6c79f663f59eea793e815b7e}} 
+float {\bfseries r}
+\item 
+\mbox{\Hypertarget{classPutBox_a1dcec91c1347ea81711027c759b0ae15}\label{classPutBox_a1dcec91c1347ea81711027c759b0ae15}} 
+float {\bfseries g}
+\item 
+\mbox{\Hypertarget{classPutBox_addcb6a5ba81ee1a9b58a4d6a431248f0}\label{classPutBox_addcb6a5ba81ee1a9b58a4d6a431248f0}} 
+float {\bfseries b}
+\item 
+\mbox{\Hypertarget{classPutBox_af1323fabb3ca5e086fe4b1f783ebfe36}\label{classPutBox_af1323fabb3ca5e086fe4b1f783ebfe36}} 
+float \mbox{\hyperlink{classPutBox_af1323fabb3ca5e086fe4b1f783ebfe36}{a}}
+\begin{DoxyCompactList}\small\item\em Cores da caixa a ser colocada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{classPutBox}{Put\+Box}} representa uma operação de colocação de uma caixa tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classPutBox}{Put\+Box}} é derivada da classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e é usada para adicionar uma caixa tridimensional a um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} especificado por suas coordenadas x, y e z.
+
+Exemplo de uso da classe \mbox{\hyperlink{classPutBox}{Put\+Box}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}sculptor.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main() \{}
+\DoxyCodeLine{    \textcolor{comment}{// Cria um objeto Sculptor com dimensões 10x10x10}}
+\DoxyCodeLine{    \mbox{\hyperlink{classSculptor}{Sculptor}} sculptor(10, 10, 10);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Define a cor vermelha como cor padrão}}
+\DoxyCodeLine{    sculptor.setColor(1.0, 0.0, 0.0, 1.0);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Cria uma caixa vermelha com vértices (1, 1, 1) e (8, 8, 8)}}
+\DoxyCodeLine{    \mbox{\hyperlink{classPutBox}{PutBox}} putBox(1, 8, 1, 8, 1, 8, 1.0, 0.0, 0.0, 1.0);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Chama a função 'draw' para adicionar a caixa na escultura}}
+\DoxyCodeLine{    putBox.draw(sculptor);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Escreve a escultura em um arquivo no formato OFF}}
+\DoxyCodeLine{    sculptor.writeOFF(\textcolor{stringliteral}{"{}escultura.off"{}});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPutBox_a235e52642dac5ca45d58b18879ddd763}\label{classPutBox_a235e52642dac5ca45d58b18879ddd763}} 
+\index{PutBox@{PutBox}!PutBox@{PutBox}}
+\index{PutBox@{PutBox}!PutBox@{PutBox}}
+\doxysubsubsection{\texorpdfstring{PutBox()}{PutBox()}}
+{\footnotesize\ttfamily Put\+Box\+::\+Put\+Box (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x0,  }\item[{int}]{\+\_\+x1,  }\item[{int}]{\+\_\+y0,  }\item[{int}]{\+\_\+y1,  }\item[{int}]{\+\_\+z0,  }\item[{int}]{\+\_\+z1,  }\item[{float}]{\+\_\+r,  }\item[{float}]{\+\_\+g,  }\item[{float}]{\+\_\+b,  }\item[{float}]{\+\_\+a }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classPutBox}{Put\+Box}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x0} & Coordenada x do ponto inicial da caixa a ser colocada. \\
+\hline
+{\em \+\_\+x1} & Coordenada x do ponto final da caixa a ser colocada. \\
+\hline
+{\em \+\_\+y0} & Coordenada y do ponto inicial da caixa a ser colocada. \\
+\hline
+{\em \+\_\+y1} & Coordenada y do ponto final da caixa a ser colocada. \\
+\hline
+{\em \+\_\+z0} & Coordenada z do ponto inicial da caixa a ser colocada. \\
+\hline
+{\em \+\_\+z1} & Coordenada z do ponto final da caixa a ser colocada. \\
+\hline
+{\em \+\_\+r} & Componente vermelha da cor da caixa a ser colocada. \\
+\hline
+{\em \+\_\+g} & Componente verde da cor da caixa a ser colocada. \\
+\hline
+{\em \+\_\+b} & Componente azul da cor da caixa a ser colocada. \\
+\hline
+{\em \+\_\+a} & Componente alfa (transparência) da cor da caixa a ser colocada. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPutBox_a3caaf01d035f5a0749fd308e9a86de94}\label{classPutBox_a3caaf01d035f5a0749fd308e9a86de94}} 
+\index{PutBox@{PutBox}!draw@{draw}}
+\index{draw@{draw}!PutBox@{PutBox}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Box\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Função que coloca uma caixa tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a caixa será colocada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a34585fd7c0bd7378fc69c4ee208e676c}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/putbox.\+h\item 
+src/putbox.\+cpp\end{DoxyCompactItemize}

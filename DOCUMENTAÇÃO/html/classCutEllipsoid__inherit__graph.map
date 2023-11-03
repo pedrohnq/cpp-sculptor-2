@@ -1,0 +1,4 @@
+<map id="CutEllipsoid" name="CutEllipsoid">
+<area shape="rect" id="node1" title="A classe CutEllipsoid representa uma operação de corte em forma de elipsoide tridimensional." alt="" coords="25,80,124,107"/>
+<area shape="rect" id="node2" href="$classFiguraGeometrica.html" title="A classe FiguraGeometrica é uma classe base abstrata para representar figuras geométricas." alt="" coords="5,5,144,32"/>
+</map>

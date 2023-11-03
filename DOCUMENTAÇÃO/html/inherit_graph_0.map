@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classFiguraGeometrica.html" title="A classe FiguraGeometrica é uma classe base abstrata para representar figuras geométricas." alt="" coords="5,183,144,209"/>
+<area shape="rect" id="node2" href="$classCutBox.html" title="A classe CutBox representa uma operação de corte em forma de caixa tridimensional." alt="" coords="207,5,276,32"/>
+<area shape="rect" id="node3" href="$classCutEllipsoid.html" title="A classe CutEllipsoid representa uma operação de corte em forma de elipsoide tridimensional." alt="" coords="192,56,291,83"/>
+<area shape="rect" id="node4" href="$classCutSphere.html" title="A classe CutSphere representa uma operação de corte em forma de esfera tridimensional." alt="" coords="197,107,286,133"/>
+<area shape="rect" id="node5" href="$classCutVoxel.html" title="A classe CutVoxel representa uma operação de corte em um único voxel tridimensional." alt="" coords="202,157,281,184"/>
+<area shape="rect" id="node6" href="$classPutBox.html" title="A classe PutBox representa uma operação de colocação de uma caixa tridimensional no objeto Sculptor." alt="" coords="207,208,275,235"/>
+<area shape="rect" id="node7" href="$classPutEllipsoid.html" title="A classe PutEllipsoid representa uma operação de colocação de um elipsoide tridimensional no objeto S..." alt="" coords="192,259,291,285"/>
+<area shape="rect" id="node8" href="$classPutSphere.html" title="A classe PutSphere representa uma operação de colocação de uma esfera tridimensional no objeto Sculpt..." alt="" coords="197,309,285,336"/>
+<area shape="rect" id="node9" href="$classPutVoxel.html" title="A classe PutVoxel representa uma operação de colocação de um voxel tridimensional no objeto Sculptor." alt="" coords="202,360,281,387"/>
+</map>
