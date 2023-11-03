@@ -1,0 +1,159 @@
+\hypertarget{classCutSphere}{}\doxysection{Cut\+Sphere Class Reference}
+\label{classCutSphere}\index{CutSphere@{CutSphere}}
+
+
+A classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}} representa uma operação de corte em forma de esfera tridimensional.  
+
+
+
+
+{\ttfamily \#include $<$cutsphere.\+h$>$}
+
+
+
+Inheritance diagram for Cut\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classCutSphere__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cut\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classCutSphere__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCutSphere_ae1c5db2fea2e664bd1a439fc579a0f32}{Cut\+Sphere}} (int \+\_\+xcenter, int \+\_\+ycenter, int \+\_\+zcenter, int \+\_\+radius, float \+\_\+r, float \+\_\+g, float \+\_\+b, float \+\_\+a)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCutSphere_a9314c0e7e18f0e488cce4d4b2fbb8ae7}\label{classCutSphere_a9314c0e7e18f0e488cce4d4b2fbb8ae7}} 
+\mbox{\hyperlink{classCutSphere_a9314c0e7e18f0e488cce4d4b2fbb8ae7}{$\sim$\+Cut\+Sphere}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCutSphere_ad62239c047f0817ba6fd4b85ae2eae42}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t)
+\begin{DoxyCompactList}\small\item\em Função que realiza a operação de corte em um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCutSphere_a9b02dc65220b2e2eb2d97c0ec282375a}\label{classCutSphere_a9b02dc65220b2e2eb2d97c0ec282375a}} 
+int {\bfseries xcenter}
+\item 
+\mbox{\Hypertarget{classCutSphere_adf21bbf750b8e318db9a02786881542e}\label{classCutSphere_adf21bbf750b8e318db9a02786881542e}} 
+int {\bfseries ycenter}
+\item 
+\mbox{\Hypertarget{classCutSphere_a06dd02da6f637b0de55d2e02aeb3b9af}\label{classCutSphere_a06dd02da6f637b0de55d2e02aeb3b9af}} 
+int \mbox{\hyperlink{classCutSphere_a06dd02da6f637b0de55d2e02aeb3b9af}{zcenter}}
+\begin{DoxyCompactList}\small\item\em Coordenadas do centro da esfera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCutSphere_a1952c3bad1eae06bff6776292381b4ed}\label{classCutSphere_a1952c3bad1eae06bff6776292381b4ed}} 
+int \mbox{\hyperlink{classCutSphere_a1952c3bad1eae06bff6776292381b4ed}{radius}}
+\begin{DoxyCompactList}\small\item\em Raio da esfera. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCutSphere_a6a717d38c7e58af7799ec3a999cc25ca}\label{classCutSphere_a6a717d38c7e58af7799ec3a999cc25ca}} 
+float {\bfseries r}
+\item 
+\mbox{\Hypertarget{classCutSphere_ab9550e02e3a8e406c080c21c6c07c900}\label{classCutSphere_ab9550e02e3a8e406c080c21c6c07c900}} 
+float {\bfseries g}
+\item 
+\mbox{\Hypertarget{classCutSphere_a4caf9c15c1c5f9818b991acdde79e1ff}\label{classCutSphere_a4caf9c15c1c5f9818b991acdde79e1ff}} 
+float {\bfseries b}
+\item 
+\mbox{\Hypertarget{classCutSphere_aacd38463504d6befba14fe042437f5bd}\label{classCutSphere_aacd38463504d6befba14fe042437f5bd}} 
+float \mbox{\hyperlink{classCutSphere_aacd38463504d6befba14fe042437f5bd}{a}}
+\begin{DoxyCompactList}\small\item\em Cores da operação de corte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}} representa uma operação de corte em forma de esfera tridimensional. 
+
+A classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}} é derivada da classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e é usada para realizar um corte em um espaço tridimensional especificado por seu centro (x, y, z) e raio.
+
+Exemplo de uso da classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}sculptor.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main() \{}
+\DoxyCodeLine{    \textcolor{comment}{// Cria um objeto Sculptor com dimensões 10x10x10}}
+\DoxyCodeLine{    \mbox{\hyperlink{classSculptor}{Sculptor}} sculptor(10, 10, 10);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Define a cor vermelha como cor padrão}}
+\DoxyCodeLine{    sculptor.setColor(1.0, 0.0, 0.0, 1.0);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Adiciona uma esfera vermelha no centro da escultura com raio 4}}
+\DoxyCodeLine{    \mbox{\hyperlink{classPutSphere}{PutSphere}} putSphere(5, 5, 5, 4, 1.0, 0.0, 0.0, 1.0);}
+\DoxyCodeLine{    putSphere.draw(sculptor);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Remove a esfera}}
+\DoxyCodeLine{    \mbox{\hyperlink{classCutSphere}{CutSphere}} cutSphere(5, 5, 5, 4);}
+\DoxyCodeLine{    cutSphere.draw(sculptor);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Escreve a escultura em um arquivo no formato OFF}}
+\DoxyCodeLine{    sculptor.writeOFF(\textcolor{stringliteral}{"{}escultura.off"{}});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCutSphere_ae1c5db2fea2e664bd1a439fc579a0f32}\label{classCutSphere_ae1c5db2fea2e664bd1a439fc579a0f32}} 
+\index{CutSphere@{CutSphere}!CutSphere@{CutSphere}}
+\index{CutSphere@{CutSphere}!CutSphere@{CutSphere}}
+\doxysubsubsection{\texorpdfstring{CutSphere()}{CutSphere()}}
+{\footnotesize\ttfamily Cut\+Sphere\+::\+Cut\+Sphere (\begin{DoxyParamCaption}\item[{int}]{\+\_\+xcenter,  }\item[{int}]{\+\_\+ycenter,  }\item[{int}]{\+\_\+zcenter,  }\item[{int}]{\+\_\+radius,  }\item[{float}]{\+\_\+r,  }\item[{float}]{\+\_\+g,  }\item[{float}]{\+\_\+b,  }\item[{float}]{\+\_\+a }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classCutSphere}{Cut\+Sphere}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+xcenter} & Coordenada x do centro da esfera. \\
+\hline
+{\em \+\_\+ycenter} & Coordenada y do centro da esfera. \\
+\hline
+{\em \+\_\+zcenter} & Coordenada z do centro da esfera. \\
+\hline
+{\em \+\_\+radius} & Raio da esfera. \\
+\hline
+{\em \+\_\+r} & Componente vermelha da cor da operação de corte. \\
+\hline
+{\em \+\_\+g} & Componente verde da cor da operação de corte. \\
+\hline
+{\em \+\_\+b} & Componente azul da cor da operação de corte. \\
+\hline
+{\em \+\_\+a} & Componente alfa (transparência) da cor da operação de corte. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCutSphere_ad62239c047f0817ba6fd4b85ae2eae42}\label{classCutSphere_ad62239c047f0817ba6fd4b85ae2eae42}} 
+\index{CutSphere@{CutSphere}!draw@{draw}}
+\index{draw@{draw}!CutSphere@{CutSphere}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Cut\+Sphere\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Função que realiza a operação de corte em um objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a operação de corte será aplicada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a34585fd7c0bd7378fc69c4ee208e676c}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/cutsphere.\+h\item 
+src/cutsphere.\+cpp\end{DoxyCompactItemize}

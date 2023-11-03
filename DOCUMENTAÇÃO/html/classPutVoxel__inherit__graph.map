@@ -1,0 +1,4 @@
+<map id="PutVoxel" name="PutVoxel">
+<area shape="rect" id="node1" title="A classe PutVoxel representa uma operação de colocação de um voxel tridimensional no objeto Sculptor." alt="" coords="35,80,114,107"/>
+<area shape="rect" id="node2" href="$classFiguraGeometrica.html" title="A classe FiguraGeometrica é uma classe base abstrata para representar figuras geométricas." alt="" coords="5,5,144,32"/>
+</map>

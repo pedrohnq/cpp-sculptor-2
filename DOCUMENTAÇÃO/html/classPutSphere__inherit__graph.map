@@ -1,0 +1,4 @@
+<map id="PutSphere" name="PutSphere">
+<area shape="rect" id="node1" title="A classe PutSphere representa uma operação de colocação de uma esfera tridimensional no objeto Sculpt..." alt="" coords="31,80,119,107"/>
+<area shape="rect" id="node2" href="$classFiguraGeometrica.html" title="A classe FiguraGeometrica é uma classe base abstrata para representar figuras geométricas." alt="" coords="5,5,144,32"/>
+</map>

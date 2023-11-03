@@ -1,0 +1,152 @@
+\hypertarget{classPutVoxel}{}\doxysection{Put\+Voxel Class Reference}
+\label{classPutVoxel}\index{PutVoxel@{PutVoxel}}
+
+
+A classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}} representa uma operação de colocação de um voxel tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$putvoxel.\+h$>$}
+
+
+
+Inheritance diagram for Put\+Voxel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classPutVoxel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Put\+Voxel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classPutVoxel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPutVoxel_ab710effddfa6b7c045ffda10483ffb12}{Put\+Voxel}} (int \+\_\+x, int \+\_\+y, int \+\_\+z, float \+\_\+r, float \+\_\+g, float \+\_\+b, float \+\_\+a)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPutVoxel_ac3c14b19e69b462e3178b5dca92d7b34}\label{classPutVoxel_ac3c14b19e69b462e3178b5dca92d7b34}} 
+\mbox{\hyperlink{classPutVoxel_ac3c14b19e69b462e3178b5dca92d7b34}{$\sim$\+Put\+Voxel}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPutVoxel_af784ab77d8a7aac2010e608796710ccb}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t)
+\begin{DoxyCompactList}\small\item\em Função que coloca um voxel tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPutVoxel_acc09df6a9ef63de8e380c8ba05dc7053}\label{classPutVoxel_acc09df6a9ef63de8e380c8ba05dc7053}} 
+int {\bfseries x}
+\item 
+\mbox{\Hypertarget{classPutVoxel_a570160947f9ef0a8f541e9cabb96d5f7}\label{classPutVoxel_a570160947f9ef0a8f541e9cabb96d5f7}} 
+int {\bfseries y}
+\item 
+\mbox{\Hypertarget{classPutVoxel_a4639c451b0a04bac087741ac1bd247f5}\label{classPutVoxel_a4639c451b0a04bac087741ac1bd247f5}} 
+int \mbox{\hyperlink{classPutVoxel_a4639c451b0a04bac087741ac1bd247f5}{z}}
+\begin{DoxyCompactList}\small\item\em Coordenadas do voxel a ser colocado. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPutVoxel_ab142ffbb317484f0dc2d54f4c78f1dbe}\label{classPutVoxel_ab142ffbb317484f0dc2d54f4c78f1dbe}} 
+float {\bfseries r}
+\item 
+\mbox{\Hypertarget{classPutVoxel_a764385a61b8cbbe22c5a385b2eec2623}\label{classPutVoxel_a764385a61b8cbbe22c5a385b2eec2623}} 
+float {\bfseries g}
+\item 
+\mbox{\Hypertarget{classPutVoxel_acc68157667afefff5b26acf96ccf53d0}\label{classPutVoxel_acc68157667afefff5b26acf96ccf53d0}} 
+float {\bfseries b}
+\item 
+\mbox{\Hypertarget{classPutVoxel_a6d28ea593597b57e8b0a40b3a3a3b6ef}\label{classPutVoxel_a6d28ea593597b57e8b0a40b3a3a3b6ef}} 
+float \mbox{\hyperlink{classPutVoxel_a6d28ea593597b57e8b0a40b3a3a3b6ef}{a}}
+\begin{DoxyCompactList}\small\item\em Cores do voxel a ser colocado. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}} representa uma operação de colocação de um voxel tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}} é derivada da classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e é usada para adicionar um voxel tridimensional a um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} especificado por suas coordenadas (x, y, z).
+
+Exemplo de uso da classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include "{}sculptor.h"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main() \{}
+\DoxyCodeLine{    \textcolor{comment}{// Cria um objeto Sculptor com dimensões 10x10x10}}
+\DoxyCodeLine{    \mbox{\hyperlink{classSculptor}{Sculptor}} sculptor(10, 10, 10);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Define a cor vermelha como cor padrão}}
+\DoxyCodeLine{    sculptor.setColor(1.0, 0.0, 0.0, 1.0);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Adiciona um voxel na posição (5, 5, 5) com a cor padrão}}
+\DoxyCodeLine{    \mbox{\hyperlink{classPutVoxel}{PutVoxel}} putVoxel(5, 5, 5, 1.0, 0.0, 0.0, 1.0);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Chama a função 'draw' para adicionar o voxel na escultura}}
+\DoxyCodeLine{    putVoxel.draw(sculptor);}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{comment}{// Escreve a escultura em um arquivo no formato OFF}}
+\DoxyCodeLine{    sculptor.writeOFF(\textcolor{stringliteral}{"{}escultura.off"{}});}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPutVoxel_ab710effddfa6b7c045ffda10483ffb12}\label{classPutVoxel_ab710effddfa6b7c045ffda10483ffb12}} 
+\index{PutVoxel@{PutVoxel}!PutVoxel@{PutVoxel}}
+\index{PutVoxel@{PutVoxel}!PutVoxel@{PutVoxel}}
+\doxysubsubsection{\texorpdfstring{PutVoxel()}{PutVoxel()}}
+{\footnotesize\ttfamily Put\+Voxel\+::\+Put\+Voxel (\begin{DoxyParamCaption}\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y,  }\item[{int}]{\+\_\+z,  }\item[{float}]{\+\_\+r,  }\item[{float}]{\+\_\+g,  }\item[{float}]{\+\_\+b,  }\item[{float}]{\+\_\+a }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classPutVoxel}{Put\+Voxel}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+x} & Coordenada x do voxel a ser colocado. \\
+\hline
+{\em \+\_\+y} & Coordenada y do voxel a ser colocado. \\
+\hline
+{\em \+\_\+z} & Coordenada z do voxel a ser colocado. \\
+\hline
+{\em \+\_\+r} & Componente vermelha da cor do voxel a ser colocado. \\
+\hline
+{\em \+\_\+g} & Componente verde da cor do voxel a ser colocado. \\
+\hline
+{\em \+\_\+b} & Componente azul da cor do voxel a ser colocado. \\
+\hline
+{\em \+\_\+a} & Componente alfa (transparência) da cor do voxel a ser colocado. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPutVoxel_af784ab77d8a7aac2010e608796710ccb}\label{classPutVoxel_af784ab77d8a7aac2010e608796710ccb}} 
+\index{PutVoxel@{PutVoxel}!draw@{draw}}
+\index{draw@{draw}!PutVoxel@{PutVoxel}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Voxel\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Função que coloca um voxel tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde o voxel será colocado. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a34585fd7c0bd7378fc69c4ee208e676c}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/putvoxel.\+h\item 
+src/putvoxel.\+cpp\end{DoxyCompactItemize}

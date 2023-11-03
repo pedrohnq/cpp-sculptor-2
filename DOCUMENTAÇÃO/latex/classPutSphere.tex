@@ -1,0 +1,150 @@
+\hypertarget{classPutSphere}{}\doxysection{Put\+Sphere Class Reference}
+\label{classPutSphere}\index{PutSphere@{PutSphere}}
+
+
+A classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}} representa uma operação de colocação de uma esfera tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}.  
+
+
+
+
+{\ttfamily \#include $<$putsphere.\+h$>$}
+
+
+
+Inheritance diagram for Put\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classPutSphere__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Put\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classPutSphere__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPutSphere_ab8fe88d887fa85feaebb0caa3ad81435}{Put\+Sphere}} (int \+\_\+xcenter, int \+\_\+ycenter, int \+\_\+zcenter, int \+\_\+radius, float \+\_\+r, float \+\_\+g, float \+\_\+b, float \+\_\+a)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPutSphere_ab1c65114a718e71349497588ccb3e04b}\label{classPutSphere_ab1c65114a718e71349497588ccb3e04b}} 
+\mbox{\hyperlink{classPutSphere_ab1c65114a718e71349497588ccb3e04b}{$\sim$\+Put\+Sphere}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor da classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPutSphere_a5105d1e171563e16c148d8f715321b24}{draw}} (\mbox{\hyperlink{classSculptor}{Sculptor}} \&t)
+\begin{DoxyCompactList}\small\item\em Função que coloca uma esfera tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPutSphere_ab6b78fcab3261c56d7ad2368afdc9cc4}\label{classPutSphere_ab6b78fcab3261c56d7ad2368afdc9cc4}} 
+int {\bfseries xcenter}
+\item 
+\mbox{\Hypertarget{classPutSphere_a2273d70cbc731c9521d6212248f8e807}\label{classPutSphere_a2273d70cbc731c9521d6212248f8e807}} 
+int {\bfseries ycenter}
+\item 
+\mbox{\Hypertarget{classPutSphere_a235b8425b2e1265a030c70f6c6ad7447}\label{classPutSphere_a235b8425b2e1265a030c70f6c6ad7447}} 
+int \mbox{\hyperlink{classPutSphere_a235b8425b2e1265a030c70f6c6ad7447}{zcenter}}
+\begin{DoxyCompactList}\small\item\em Coordenadas do centro da esfera a ser colocada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPutSphere_a3593cd1d907b6d249d1be8accd8a04de}\label{classPutSphere_a3593cd1d907b6d249d1be8accd8a04de}} 
+int \mbox{\hyperlink{classPutSphere_a3593cd1d907b6d249d1be8accd8a04de}{radius}}
+\begin{DoxyCompactList}\small\item\em Raio da esfera a ser colocada. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPutSphere_a4ee77034d38c02d28e92b283721e5f43}\label{classPutSphere_a4ee77034d38c02d28e92b283721e5f43}} 
+float {\bfseries r}
+\item 
+\mbox{\Hypertarget{classPutSphere_a7293c61adb378e2e215c02e2e2d87beb}\label{classPutSphere_a7293c61adb378e2e215c02e2e2d87beb}} 
+float {\bfseries g}
+\item 
+\mbox{\Hypertarget{classPutSphere_a4c7c1a0757682ff69e5075e58b5892f2}\label{classPutSphere_a4c7c1a0757682ff69e5075e58b5892f2}} 
+float {\bfseries b}
+\item 
+\mbox{\Hypertarget{classPutSphere_a48f5641a28d333bd823a590af849d129}\label{classPutSphere_a48f5641a28d333bd823a590af849d129}} 
+float \mbox{\hyperlink{classPutSphere_a48f5641a28d333bd823a590af849d129}{a}}
+\begin{DoxyCompactList}\small\item\em Cores da esfera a ser colocada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}} representa uma operação de colocação de uma esfera tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+A classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}} é derivada da classe \mbox{\hyperlink{classFiguraGeometrica}{Figura\+Geometrica}} e é usada para adicionar uma esfera tridimensional a um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} especificado por seu centro (x, y, z) e raio.
+
+Exemplo de uso da classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} main() \{}
+\DoxyCodeLine{   \mbox{\hyperlink{classSculptor}{Sculptor}} sculptor(10, 10, 10);}
+\DoxyCodeLine{   }
+\DoxyCodeLine{   \textcolor{comment}{// Cria uma esfera vermelha com raio 3 no centro da escultura}}
+\DoxyCodeLine{   \mbox{\hyperlink{classPutSphere}{PutSphere}} putSphere(5, 5, 5, 3, 1.0, 0.0, 0.0, 1.0);}
+\DoxyCodeLine{   }
+\DoxyCodeLine{   \textcolor{comment}{// Chama a função 'draw' para adicionar a esfera na escultura}}
+\DoxyCodeLine{   putSphere.draw(sculptor);}
+\DoxyCodeLine{   }
+\DoxyCodeLine{   sculptor.writeOFF(\textcolor{stringliteral}{"{}escultura.off"{}});}
+\DoxyCodeLine{   }
+\DoxyCodeLine{   \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPutSphere_ab8fe88d887fa85feaebb0caa3ad81435}\label{classPutSphere_ab8fe88d887fa85feaebb0caa3ad81435}} 
+\index{PutSphere@{PutSphere}!PutSphere@{PutSphere}}
+\index{PutSphere@{PutSphere}!PutSphere@{PutSphere}}
+\doxysubsubsection{\texorpdfstring{PutSphere()}{PutSphere()}}
+{\footnotesize\ttfamily Put\+Sphere\+::\+Put\+Sphere (\begin{DoxyParamCaption}\item[{int}]{\+\_\+xcenter,  }\item[{int}]{\+\_\+ycenter,  }\item[{int}]{\+\_\+zcenter,  }\item[{int}]{\+\_\+radius,  }\item[{float}]{\+\_\+r,  }\item[{float}]{\+\_\+g,  }\item[{float}]{\+\_\+b,  }\item[{float}]{\+\_\+a }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{classPutSphere}{Put\+Sphere}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+xcenter} & Coordenada x do centro da esfera a ser colocada. \\
+\hline
+{\em \+\_\+ycenter} & Coordenada y do centro da esfera a ser colocada. \\
+\hline
+{\em \+\_\+zcenter} & Coordenada z do centro da esfera a ser colocada. \\
+\hline
+{\em \+\_\+radius} & Raio da esfera a ser colocada. \\
+\hline
+{\em \+\_\+r} & Componente vermelha da cor da esfera a ser colocada. \\
+\hline
+{\em \+\_\+g} & Componente verde da cor da esfera a ser colocada. \\
+\hline
+{\em \+\_\+b} & Componente azul da cor da esfera a ser colocada. \\
+\hline
+{\em \+\_\+a} & Componente alfa (transparência) da cor da esfera a ser colocada. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPutSphere_a5105d1e171563e16c148d8f715321b24}\label{classPutSphere_a5105d1e171563e16c148d8f715321b24}} 
+\index{PutSphere@{PutSphere}!draw@{draw}}
+\index{draw@{draw}!PutSphere@{PutSphere}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Put\+Sphere\+::draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSculptor}{Sculptor}} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Função que coloca uma esfera tridimensional no objeto \mbox{\hyperlink{classSculptor}{Sculptor}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Referência para um objeto \mbox{\hyperlink{classSculptor}{Sculptor}} onde a esfera será colocada. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classFiguraGeometrica_a34585fd7c0bd7378fc69c4ee208e676c}{Figura\+Geometrica}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/putsphere.\+h\item 
+src/putsphere.\+cpp\end{DoxyCompactItemize}
